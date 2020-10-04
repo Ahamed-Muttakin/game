@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runner Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+                integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+                crossorigin="anonymous"></script>
+        <link href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
+</head>
+<body>
+    <div class="container" id="container" onclick="jump()" >
+        <div class="floor" >
+            <div class="road" id="road">
+            </div>
+        </div>
+        <div id="ball" class="bounce"></div>
+        <div id="block" class="object"></div>
+        <div class="score">Score:
+        <p id="score">1234</p>
+        </div> 
+        <marquee behavior="scrool" direction="left" scrollamount="9"><img src="cloud.png" alt=""></marquee>
+        <marquee behavior="scrool" direction="left" scrollamount="8"><div class="fly2"></div></marquee>
+        <input type="button" id="button" value="Reply">
+    </div>
+</body>
+</html>

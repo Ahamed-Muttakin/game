@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(gray,white);
+}
+#button{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+   /*  opacity: 0; */
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.container{
+    width: 700px;
+    height: 200px;
+    background-color: white;
+    border:2px solid aqua;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    overflow: hidden;
+    background: url(back.jpg);
+    background-size:100vh ;
+}
+.floor{
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    bottom: 0px;
+    position: absolute;
+    
+}
+.road{
+    animation: object 3s linear infinite;
+    left: 100%;
+    display: block;
+    top: 40%;
+    left: 100%;
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    background-color: white;
+    animation-delay: 500ms;
+}
+.road span{
+    background-color: white;
+    height: 20px;
+    width: 30px;
+    margin-left: 20px;
+}
+.score{
+    content: '';
+    color: white;
+    border: 2px solid aqua;
+    width: 100px;
+    height: 30px;
+    float: right;
+    background-color: black;
+    opacity: .7;
+}
+#score{
+    float: right;
+}
+.fly{
+    width: 20px; height: 5px; 
+    background-color: black;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.fly2{
+    margin: 5px;
+    width: 20px; height: 5px; 
+    background-color: black;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.bounce{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(22, 104, 212);
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    border-radius: 50%;
+}
+img{
+    height: 70px;
+    width: 90px;
+}
+.animate_bounce{
+    animation: jump 500ms linear infinite;
+}
+@keyframes jump{
+    0%{
+        bottom: 150px;
+    }
+    30%{
+        bottom: 100px;
+    }
+    70%{
+        bottom: 100px;
+    }
+    100%{bottom: 150px;}
+
+}
+.object{
+    height: 50px;
+    width: 10px;
+    background-color: rgb(88, 85, 85);
+    bottom: 20px;
+    position: absolute;
+    left: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    animation: object 3s linear infinite;
+}
+@keyframes object{
+    10%{
+        left:90%
+    }
+    50%{
+        left: 50%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
